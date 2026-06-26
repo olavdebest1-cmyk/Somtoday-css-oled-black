@@ -8,5 +8,5 @@ Kopieër het blok hierbeneden en plak het in je custom css code in de somtoday m
 
 Notes: 
 - Als je wil zien hoe het eruit ziet dan staat dat in de css file.
-- Ik ga dit waarschijnlijk updaten tot examens volgend jaar, dus als je dit daarna ziet sorry man.
+- Ik ga dit waarschijnlijk updaten tot examens volgend jaar, dus als je dit daarna ziet en hij werkt niet, sorry man.
 - Dit is gemaakt met ai maar wel gecontroleerd ik heb zelf echt 5 letters veranderd.
