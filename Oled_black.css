@@ -1,0 +1,258 @@
+:root,
+:root.dark {
+    --green-0: #162a22;
+
+    /* Achtergronden */
+    --bg-neutral-none: #000000;
+    --bg-neutral-weakest: #000000;
+    --bg-neutral-weak: #050505;
+    --bg-neutral-moderate: #0b0b0b;
+    --bg-neutral-strong: #121212;
+    --bg-neutral-strongest: #1a1a1a;
+    --bg-neutral-max: #202020;
+
+    --bg-elevated-none: #000000;
+    --bg-elevated-weakest: #050505;
+    --bg-elevated-weak: #0b0b0b;
+    --bg-elevated-strong: #121212;
+
+    /* Tekst */
+    --text-strong: #ffffff;
+    --text-moderate: #dddddd;
+    --text-weak: #b5b5b5;
+    --text-weakest: #888888;
+
+    /* Borders */
+    --border-neutral-inverted: #ffffff;
+    --border-neutral-weak: #1f1f1f;
+    --border-neutral-normal: #2b2b2b;
+    --border-neutral-strong: #3b3b3b;
+    --border-neutral-strongest: #4b4b4b;
+
+    /* Schaduw */
+    --shadow-color: rgba(0, 0, 0, .9);
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+html,
+body {
+    background: #000 !important;
+    color: #fff;
+}
+
+/* =========================
+   CARDS / PANELS / DIALOGS
+========================= */
+
+[class*="card"],
+[class*="Card"],
+[class*="panel"],
+[class*="Panel"],
+[class*="dialog"],
+[class*="Dialog"] {
+    background: #050505 !important;
+    border-color: #222 !important;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+textarea,
+select {
+    background: #0b0b0b !important;
+    color: #fff !important;
+    border-color: #333 !important;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+table,
+thead,
+tbody,
+tr,
+td,
+th {
+    background: #000 !important;
+    color: #fff !important;
+    border-color: #222 !important;
+}
+
+tr:hover,
+button:hover {
+    background: #111 !important;
+}
+
+/* =========================
+   ROOSTER
+========================= */
+
+sl-rooster-item.les {
+    background: rgba(18, 28, 55, 0.60) !important;
+    border: 1px solid rgba(90, 120, 180, 0.20) !important;
+    box-shadow: none !important;
+}
+
+sl-rooster-item.les .titel,
+sl-rooster-item.les .locatie,
+sl-rooster-item.les .label {
+    color: #fff !important;
+}
+
+sl-rooster-item.les hmy-pill {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* =========================
+   AFGEVINKT
+========================= */
+
+sl-studiewijzer-item.afgevinkt {
+    border-left-color: #3fae7a !important;
+    background-color: #162a22 !important;
+}
+
+sl-studiewijzer-item.afgevinkt hmy-checkbox .checkmark.checked svg path,
+sl-studiewijzer-item.afgevinkt hmy-checkbox .checkmark.checked,
+sl-studiewijzer-item.afgevinkt .type svg,
+sl-studiewijzer-item.afgevinkt .type svg path {
+    fill: #3fae7a !important;
+    color: #3fae7a !important;
+}
+
+/* =========================
+   HMY PILL
+========================= */
+
+hmy-pill {
+    --pill-bg: #0b0b0b !important;
+    --pill-text: #ffffff !important;
+
+    background: #0b0b0b !important;
+    border: 1px solid #2b2b2b !important;
+    color: #ffffff !important;
+}
+
+hmy-pill span {
+    color: #ffffff !important;
+}
+
+hmy-pill .opacity-80 {
+    color: #b5b5b5 !important;
+}
+
+/* =========================
+   INITIALS
+========================= */
+
+div.initials {
+    background: #162a22 !important;
+    border: 1px solid #2b2b2b !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff !important;
+}
+
+div.initials span {
+    color: #3fae7a !important;
+    font-weight: 600 !important;
+}
+
+/* =========================
+   BUTTONS / NAV
+========================= */
+
+div.buttons .button,
+div.buttons .button .inner-button {
+    background: #000 !important;
+}
+
+div.buttons .button:hover,
+div.buttons .button:hover .inner-button {
+    background: #000 !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+div.buttons .button svg,
+div.buttons .button svg path {
+    fill: #fff !important;
+}
+
+div.buttons .button:focus-visible {
+    outline: 2px solid #4da3ff !important;
+    outline-offset: 2px;
+}
+
+/* =========================
+   NAVIGATION ITEM
+========================= */
+
+div.navigation-item {
+    background: #000 !important;
+    color: #cfcfcf !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+div.navigation-item > span {
+    color: #cfcfcf !important;
+}
+
+div.navigation-item.active {
+    background: #0b0b0b !important;
+    color: #fff !important;
+    border-left: 2px solid #fff !important;
+}
+
+div.navigation-item.active > span {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+div.navigation-item:hover {
+    background: #050505 !important;
+}
+
+div.navigation-item:focus,
+div.navigation-item:focus-visible {
+    background: #000 !important;
+    outline: none !important;
+}
+
+/* =========================
+   SELECTED MESSAGE
+========================= */
+
+sl-bericht-samenvatting.selected {
+    background: #000 !important;
+    border-left: 3px solid #4da3ff !important;
+    padding-left: 6px;
+}
+
+sl-bericht-samenvatting.selected * {
+    background: transparent !important;
+}
+
+/* =========================
+   WAARSCHUWING
+========================= */
+
+div.waarschuwing {
+    background: #000 !important;
+    color: #e6e6e6 !important;
+    border: 1px solid #1a1a1a !important;
+}
+
+div.waarschuwing svg {
+    fill: #ffcc00 !important;
+}
